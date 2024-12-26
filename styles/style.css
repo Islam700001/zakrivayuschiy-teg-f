@@ -18,7 +18,7 @@
   height: clamp(20.438rem, 19.5359rem + 3.8490vw, 23rem);
   justify-content: center;
   gap: 24px;
-  margin: 100px auto;
+  margin: 102px auto 100px;
   padding: 25px 0;
   font-family: var(--accent-font);
 }
@@ -63,7 +63,6 @@
 
 .card__image-wrapper {
   overflow: hidden;
-  max-height: 696px;
   position: relative;
   border-top: 2px solid var(--accent-color);
   border-bottom: 2px solid var(--accent-color);
@@ -73,6 +72,7 @@
   max-width: 100%;
   border: none;
   margin-bottom: -5px;
+  aspect-ratio: 1/1;
 }
 
 .saturation-filter {
@@ -133,7 +133,7 @@
   display: flex;
   flex-direction: column;
   gap: 27px;
-  padding-top: 29px;
+  padding-top: 26px;
   padding-left: 25px;
   padding-right: 25px;
   padding-bottom: 18px;
@@ -291,13 +291,28 @@
 
 @media (width <= 375px) {
 
+  .header {
+    margin: 100px auto;
+  }
+
+  .card__title {
+    line-height: 22px;
+  }
+
+  .section {
+    gap: 44px;
+  }
+
   .card__description-wrapper {
-    padding: 24px 26px;
+    padding: 25px;
+    max-width: 371px;
   }
 
   .save-btn {
     flex-direction: column;
+    margin: 43px auto;
   }
+
   .footer-svg-button {
     width: 28px;
     height: 28px;
