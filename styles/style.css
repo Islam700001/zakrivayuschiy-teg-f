@@ -206,7 +206,6 @@
   position: relative;
   z-index: 1;
   border: 2px solid var(--text-color, #000000);
-  padding: 10px 35px;
   font-family: var(--page-accent-font-family, "PressStart2P", fantasy);
   font-size: 14px;
   text-transform: inherit;
