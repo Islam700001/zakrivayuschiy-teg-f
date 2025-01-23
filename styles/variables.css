@@ -1,14 +1,21 @@
 :root {
-  --main-font: 'Inter-Variable', sans-serif;
-  --accent-font: 'PressStart2P', Monospace;
-  --background-color: #FFFFFF;
-  --accent-color: #000000;
-  --font-weight-bold: 700;
-  --font-weight-regular: 400;
-  --backgrount-imige: repeating-linear-gradient(90deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
-  repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
-  linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
-  --stroke-color: #FFFF;
-  --mix-color: #FFF;
-  --color-fill: #FF0000;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --text-color: var(--color-black, #000000);
+  --page-background-color: var(--color-white, #ffffff);
+  --page-main-font-family: 'Inter-Variable', sans-serif;
+  --page-main-font-weight: 400;
+  --page-accent-font-family: 'PressStart2P', fantasy;
+  --headings-font-weight: 700;
+  --like-main-body-color: none;
+  --like-contour-color: var(--text-color, #000000);
+  --like-sparks-color: #ff0000;
+  --button-text-color: var(--page-background-color, #fff);
+  --page-background-image: repeating-linear-gradient(
+      to left,
+      #d3d3d3 0 2px,
+      #d3d3d300 2px 4px
+    ),
+    repeating-linear-gradient(to bottom, #d3d3d3 0 2px, #d3d3d300 2px 4px),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
 }
